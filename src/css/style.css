@@ -1,0 +1,158 @@
+
+/* estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* estilos de fondo del cuerpo */
+body{
+    background: #4ba29b;
+}
+
+/* estilo del titulo principal */
+.tituloPrincipal{
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+    padding: 1rem;
+    background: #0cb25f;
+    color: white;
+    border-radius: .5rem;
+}
+
+/* estilo del titulo secundario */
+.tituloSecundario{
+    padding: .5rem;
+    color: #760e52;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px red;
+    font-size: 1.8rem ;
+}
+
+/* estilos del formulario */
+.formulario{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 2rem;
+}
+
+.labelBuscar{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.selectBuscar{
+    border-color: #0cb25f;
+    border: 2px solid #0cb25f;
+    max-width: 100%;
+    width: 20%;
+    height: 30px;
+    font-size: 1.5rem;
+}
+
+/* estilos de los contenedores */
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    gap: 1rem;
+}
+
+/* estilos de imagen */
+.imagen{
+    max-width: 100%;
+    max-height: 100%;
+    width: 450px;
+    height: 250px;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+/* estilos de la descripcion de los años */
+.descripciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    text-align: justify;
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* estilos del boton ver mas */
+.btnMas{
+    border: 0;
+    padding: .5rem;
+    background: #0cb25f;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: .5rem;
+
+}
+
+/* estilos del footer */
+.footer{
+    text-align: center;
+    margin: 2rem;
+    color: #e8d5d5;
+    opacity: .7;
+    font-size: 1rem;
+}
+
+/* Habilitando desde javascript */
+.disabled{
+    display: none;
+}
+
+/* adaptabilidad */
+@media (max-width:710px) {
+    .tituloPrincipal{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:560px) {
+    .tituloPrincipal{
+        font-size: 1.3rem;
+    }
+
+    .tituloSecundario{
+        font-size: 1.3rem;
+    }
+
+    .imagen{
+        width: 350px;
+    }
+
+    .selectBuscar{  
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width:400px) {
+    .labelBuscar{
+        font-size: 1rem;
+    }
+    
+    .selectBuscar{  
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+}
+
+
